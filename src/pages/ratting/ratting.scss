@@ -1,0 +1,98 @@
+page-ratting {
+
+    .wrapper{
+        width:100%;
+        height:100%;
+
+        .log_div {
+            padding: 15px;
+            position:absolute;
+            top:0px;
+            left:0px;
+            right:0px;
+            bottom:0px;
+            padding-top: calc(100% - 85%);
+            img{
+                width: 150px;
+                padding-bottom: 30px;
+            }
+            .card{
+                border-radius: 5px;
+                h4{
+                    color:#616161;
+                    font-size: 26px;
+                    font-weight: 400;
+                    text-align: center;
+                }
+                hr{
+                    width:30px;
+                    margin:0 auto;
+                    border:2px solid #ffd800;
+                    height:0px;
+
+                }
+                .ratting_circle{
+                    width:85px;
+                    height:85px;
+                    border-radius: 50%;
+                    background: #f4f4f4;
+                    margin:0 auto;
+                    img{
+                        width:100%;
+                        height:100%;
+                        border-radius: 50%;
+                        object-fit: cover;
+                        object-position: center;
+                        padding: 0px;
+                    }
+                }
+                h5{
+                    text-align: center;
+                    color: #656565;
+                    padding-top: 10px;
+                    font-weight: 400;
+                    font-size:16px;
+                }
+                p{
+                    color: #b2b2b2;
+                    text-align: center;
+                    padding-top: 10px;
+                    padding-bottom: 10px;
+                }
+                .rating{
+                    margin:0px;
+                    padding:0px;
+                    text-align: center;
+                    li{
+                        padding: 3px;
+                         font-size: 25px;
+                         .icon{
+                             color: #fcb040 !important;
+                         }
+                    }
+                }
+                textarea{
+                    background: #ebebeb;
+                    width:100%;
+                }
+
+                .receipt_close{
+                    background: #78a333;
+                    color: #ffffff;
+                    font-size: 16px;
+                    border-radius:0px;
+                    height:35px;
+                    padding-left: 15px;
+                    padding-right:15px;
+                    text-transform: capitalize;
+                    width: 140px;
+                    font-weight: 400;
+                    margin:0 auto;
+                }
+
+            }  
+        }
+    }
+
+
+}

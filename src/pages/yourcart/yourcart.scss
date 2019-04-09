@@ -1,0 +1,117 @@
+page-yourcart {
+    .nav_btn{
+        color: #444444;
+    }
+    .nav_header_title{
+        color: #444444;
+        font-weight: 500;
+    }
+    .cart_wrapper{
+        width:100%;
+        h6{
+            color: #606060;
+            font-weight: 500;
+            margin-bottom: 20px;
+        }
+        h4{
+            margin:0px;
+            padding:0px;
+            color: #616161;
+            font-size: 16px;
+            padding-top: 15px;
+            padding-bottom: 15px;
+        }
+        .item_textarea{
+            width: 100%;
+            border-bottom:1px solid #9a9a9a;
+            border-left:0px;
+            border-right:0px;
+            border-top:0px;
+            color: #c8c8c8;
+        }
+        .grid{
+            color: #656565;
+            margin-top: 20px;
+            font-size: 15px;
+        }
+        .add_cart{
+            height:45px;
+            border-radius: 6px;
+            color: #fff;
+            font-weight: 500;
+            text-transform: capitalize;
+            font-weight: 400;
+            font-size: 20px;
+            position: relative;
+        }
+        .apply_code{
+            background: #363636;
+            color: #d2d2d2;
+            border-radius: 20px;
+            text-transform: capitalize;
+            font-weight: 400;
+            padding-left:30px;
+            padding-right:30px;
+        }
+        .meal_list{
+            ul{
+                padding:0px;
+                margin:0px;
+                li{
+                    list-style: none;
+                    width:100%;
+                    min-height:40px;
+                    position: relative;
+                    margin-bottom:20px;
+                    .meal_number{
+                        width:40px;
+                        height:100%;
+                        float: left;
+                        background: #759f32;
+                        color: #fff;
+                        text-align: center;
+                        font-weight: 700;
+                        position: absolute;
+                        top:0px;
+                        left:0px;
+                        bottom:0px;
+                        padding-top:4%;
+                    }
+                    .meal_details{
+                        width:calc(100% - 80px);
+                        height:100%;
+                        float: left;
+                        padding-left:60px;
+                        border-right:1px solid #9a9a9a;
+                        h4{
+                            margin:0px;
+                            padding:0px;
+                            color: #656565;
+                            font-size: 16px;
+                            padding-bottom: 5px;
+                        }
+                        p{
+                            margin:0px;
+                            padding:0px;
+                            color: #656565;
+                            font-size: 14px;
+                        }
+                    }
+                    .meal_amount{
+                        width:80px;
+                        height:100%;
+                        float: left;
+                        h5{
+                            color: #404040;
+                            margin:0px;
+                            padding:0px;
+                            text-align: right;
+                            font-weight: 400;
+                            font-size: 16px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,140 @@
+page-search {
+    .search_wrapper{
+        padding-top:50px !important;
+        position:relative;
+        .search_bar{
+            position: relative;
+            .input{
+                background: #ececec;
+                .text-input{
+                    font-size: 16px;
+                    font-weight: 300;
+                    padding-left:10px;
+                }
+            }
+            .search_btn{
+                width:40px;
+                height:100%;
+                position: absolute;
+                top:0px;
+                right:0px;
+                background: #393536;
+                color: #ffffff;
+                .icon{
+                    font-size: 18px;
+                }
+            }
+        }
+        .search_content{
+            width:100%;
+            .scroll_section{
+                .scroll-x{
+                    .scroll-content{
+                        margin:0px !important;
+                        .scroll-zoom-wrapper{
+                            .row{
+                                .list{
+                                    margin:0px;
+                                    display: inherit;
+                                    border-bottom:1px solid #d6d6d6;
+                                    .item{
+                                        display: inline-block;
+                                        .item-inner{
+                                            .input-wrapper{
+                                                .label{
+                                                    margin:0px;
+                                                    .card{
+                                                        width:160px;
+                                                        height:140px;
+                                                        padding: 0px;
+                                                        border-radius: 0px;
+                                                        box-shadow:none !important; 
+                                                        .card-content{
+                                                            padding:0px;
+                                                            widows: 100px;
+                                                            height: 100%;
+                                                            .item_image{
+                                                                width:100%;
+                                                                height:110px;
+                                                                background: #eaeaea;
+                                                                border-radius: 0px;
+                                                                position: relative;
+                                                                .icon{
+                                                                    position: absolute;
+                                                                    top:10px;
+                                                                    left:10px;
+                                                                    color: #fff;
+                                                                    font-size: 24px;
+                                                                }
+                                                                img{
+                                                                    width:100%;
+                                                                    height:100%;
+                                                                    object-postion:center;
+                                                                    object-fit:cover;
+                                                                    border-radius: 0px;
+                                                                }
+                                                            }
+                                                            .item_detail{
+                                                                width:100%;
+                                                                height:calc(100% - 110px);
+                                                                padding: 5px;
+                                                                padding-top: 10px;                                                
+                                                                p{
+                                                                    color: #6f6f6f;
+                                                                    font-size: 16px;
+                                                                }
+                                                            }
+    
+                                                        }                              
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }      
+            }
+            h5{
+                margin:0px;
+                padding:10px;
+                color: #696969;
+                font-size: 18px;
+                font-weight: 400;
+            }
+            .top_catagories{
+                ul{
+                    padding:10px;
+                    margin:0px;
+                    li{
+                        width: calc(100% - 51%);
+                        height:120px;
+                        background: #ececec;
+                        display: inline-block;
+                        position: relative;
+                        img{
+                            width:100%;
+                            height:100%;
+                            object-fit:cover;
+                            object-position: center;
+                        }
+                        .label_green{
+                            position:absolute;
+                            bottom:0px;
+                            left:0px;
+                            color: #fff;
+                            background: #759f32;
+                            padding: 5px;
+                            font-weight: 300;
+                            padding-left: 10px;
+                            padding-right: 10px;
+                            letter-spacing: 1px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

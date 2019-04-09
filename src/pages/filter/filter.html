@@ -1,0 +1,70 @@
+
+<ion-content class="theme_transparent relative heightFull">
+  <div class="filter_space" (click)="dismiss()"></div>
+  <div class="filter_wrapper" padding>
+    <h5>Sort and Filter</h5>
+    <hr>
+    <div class="sort_tab">
+      <ul>
+        <li (click)="filter_tab(1)" [class.active]="filter_type== 1">Sort</li>
+        <li (click)="filter_tab(2)" [class.active]="filter_type== 2">Price</li>
+        <li (click)="filter_tab(3)" [class.active]="filter_type== 3">Dietary</li>
+        <div class="clear"></div>
+      </ul>
+    </div>
+    <div class="sort_tabcontent">
+      <div [hidden]="filter_type != 1">
+        <ul>
+          <li class="list list1">
+              <ion-label>Recommended</ion-label>
+              <ion-radio value="friends"></ion-radio>
+              <div class="clear"></div>
+          </li>
+          <li class="list list2">
+              <ion-label>Most popular</ion-label>
+              <ion-radio value="friends"></ion-radio>
+              <div class="clear"></div>
+          </li>
+          <li class="list list3">
+              <ion-label>Rating</ion-label>
+              <ion-radio value="friends" ></ion-radio>
+              <div class="clear"></div>
+          </li>
+          <li class="list list4">
+              <ion-label>Delivery time</ion-label>
+              <ion-radio value="friends" ></ion-radio>
+              <div class="clear"></div>
+          </li>
+        </ul>
+      </div>
+      <div [hidden]="filter_type != 2">
+          <p>Booking Price Range</p>
+          <ion-range dualKnobs="true" [(ngModel)]="dualValue2" min="21" max="72" step="3" snaps="true"></ion-range>
+        </div>
+        <div [hidden]="filter_type != 3">
+            <ul>
+                <li class="list list5">
+                    <ion-label>Vegiterian</ion-label>
+                    <ion-radio value="friends"></ion-radio>
+                    <div class="clear"></div>
+                </li>
+                <li class="list list6">
+                    <ion-label>Vegan</ion-label>
+                    <ion-radio value="friends"></ion-radio>
+                    <div class="clear"></div>
+                </li>
+                <li class="list list7">
+                    <ion-label>Gluten-free</ion-label>
+                    <ion-radio value="friends" ></ion-radio>
+                    <div class="clear"></div>
+                </li>
+              </ul>
+        </div>
+    </div>
+  </div>
+</ion-content>
+<ion-footer>
+  <button ion-button class="" full (click)="dismiss()">
+    Done
+  </button>
+</ion-footer>

@@ -1,0 +1,26 @@
+
+<ion-content>
+    <div class="profile_banner">
+        <div class="profile_banner_circle">
+
+        </div>
+    </div>
+    <div class="profile_wrapper">
+        <div class="profile_head">
+            <div class="profile_left floatLeft">
+                <h4>John Willsmith</h4>
+                <p>smith@gmail.com</p>
+            </div>
+            <div class="profile_right floatRight textRight" (click)="edit()">
+                 <img src="assets/imgs/edit.png">
+            </div>
+            <div class="clear"></div>
+        </div>
+        <ul>
+            <li class="pay" (click)="wallet()">Payment</li>
+            <li class="about">Help</li>
+            <li class="help">About</li>
+            <li class="setting" (click)="settings()">Settings</li>
+        </ul>
+    </div>
+</ion-content>

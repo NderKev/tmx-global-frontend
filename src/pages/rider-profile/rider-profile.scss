@@ -1,0 +1,28 @@
+page-rider-profile {
+  .tabbar{
+    position: relative !important;
+    top:50px !important;
+    background-image:none !important;
+  }
+  .tab-button-icon{
+    color: #393536 !important;
+  }
+  .tab-button{
+    border-bottom:3px solid transparent;
+  }
+  .tab-button[aria-selected=true]{
+    border-bottom:4px solid #ffd800;
+  }
+  .tabs-md[tabsPlacement="top"] > .tabbar::after, .footer-md::before, .tabs-md[tabsPlacement="bottom"] > .tabbar::before{
+    background-image:none !important;
+  }
+
+  .nav_header_title {
+    .icon{
+      color: #fcff00;
+      position: relative;
+      top: 2px;
+      left: 5px;
+    }
+  }
+}

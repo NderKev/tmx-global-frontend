@@ -1,0 +1,74 @@
+<!--
+  Generated template for the StorePage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>store</ion-title>
+  </ion-navbar>
+</ion-header>
+  <ion-content>
+    <div class="store_wrapper">
+      <div class="top_wrapper textCenter">
+        <div class="nav_header">
+          <button class="nav_btn floatLeft" (click)="back()">
+              <ion-icon name="ios-arrow-back"></ion-icon>
+          </button>
+          <div class="clear"></div>
+        </div>
+        <img src="assets/imgs/tmx_logo.png">
+        <h3>Update Profile</h3>
+        <hr>
+      </div>
+      <div class="content_wrapper">
+        <ion-list>
+            <ion-item>
+                <ion-label color="primary" stacked>ID NUMBER</ion-label>
+                <ion-input type="number" placeholder="ID No"></ion-input>
+            </ion-item>
+            <ion-item>
+                <ion-label color="primary" stacked>LOCATION</ion-label>
+                <ion-input type="text" placeholder="Location"></ion-input>
+            </ion-item>
+            <ion-item>
+                <ion-label color="primary" stacked>STORE lICENSE NUMBER</ion-label>
+                <ion-input type="text" placeholder="LICENSE No"></ion-input>
+            </ion-item>
+            <ion-item>
+                <ion-label color="primary" stacked>STORE CATEGORY</ion-label>
+            </ion-item>
+            <select>
+              <option>Fast Food</option>
+            </select>
+                <ion-label color="primary" stacked>UPLOAD DOCUMENTS</ion-label>
+                <div class="upload_docs">
+                  <div class="front_id_img">
+                    <ion-label color="primary" stacked>Front ID Image</ion-label>
+                    <img ng-src="imagesrc" class="avatar" ng-click="uploadProfilePic()"/>
+                    <button class="button button-primary" ng-click="uploadProfilePic()">Change Picture</button>
+                    <input type="file" accept="image/*" id="upload" />
+                  </div>
+                  <div class="rear_id_img">
+                      <ion-label color="primary" stacked>Rear ID Image</ion-label>
+                      <img ng-src="imagesrc" class="avatar" ng-click="uploadProfilePic()"/>
+                      <button class="button button-primary" ng-click="uploadProfilePic()">Change Picture</button>
+                      <input type="file" accept="image/*" id="upload" />
+                  </div>
+                  <div class="store_license_img">
+                        <ion-label color="primary" stacked>Store license</ion-label>
+                        <img ng-src="imagesrc" class="avatar" ng-click="uploadProfilePic()"/>
+                        <button class="button button-primary" ng-click="uploadProfilePic()">Change Picture</button>
+                        <input type="file" accept="image/*" id="upload" />
+                  </div>
+                  <div class="clear"></div>
+                </div>
+            </ion-list>
+        <button ion-button full class="theme_background" icon-right (click)="verifyStore()">Upload and Verify
+            <ion-icon name="ios-arrow-forward" class=""></ion-icon>
+        </button>
+      </div>
+    </div>
+  </ion-content>

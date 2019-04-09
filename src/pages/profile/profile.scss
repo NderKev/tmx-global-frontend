@@ -1,0 +1,83 @@
+page-profile {
+    .scroll-content{
+        margin-top: 105px !important;
+    }
+    .profile_banner{
+        background:url("../assets/imgs/edit_bg.png") !important;
+        height:150px;
+        width:100%;
+        background-position: center !important;
+        background-size: cover !important;
+        padding: 20px;
+        .profile_banner_circle{
+            width:95px;
+            height:95px;
+            border-radius: 50%;
+            background-color: #759f32;
+            background-image:url("../assets/imgs/profile_avatar.png") !important;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: 20px;
+        }
+    }
+    .profile_wrapper{
+        width:100%;
+        .profile_head{
+            width:100%;
+            padding: 10px;
+            .profile_left{
+                width:calc(100% - 80px);
+                padding: 5px;
+                h4{
+                    margin:0px;
+                    padding:0px;
+                    color: #808080;
+                    padding-bottom: 3px;
+                }
+                p{
+                    margin:0px;
+                    padding:0px;
+                    color: #b4b4b4;
+                    font-weight: 300;
+                }
+            }
+            .profile_right{
+                width:80px;
+                border-left:1px solid #c6c6c6;
+                padding: 5px;
+                img{
+                    width:30px;
+                }
+            }
+        }
+        ul{
+            margin:0px;
+            padding: 15px;
+            li{
+                list-style: none;
+                width:100%;
+                color: #797979;
+                font-weight: 300;
+                font-size: 18px;
+                padding-bottom:8px;
+                padding-top: 8px;
+                background-repeat: no-repeat;
+                background-size: 23px;
+                background-position: 0px;
+                padding-left: 40px;
+            }
+            .help{
+                background-image:url("../assets/imgs/about.png") !important;
+            }
+            .about{
+                background-image:url("../assets/imgs/help.png") !important;
+            }
+            .pay{
+                background-image:url("../assets/imgs/pay.png") !important;
+            }
+            .setting{
+                background-image:url("../assets/imgs/setting.png") !important;
+            }
+        }
+    }
+}

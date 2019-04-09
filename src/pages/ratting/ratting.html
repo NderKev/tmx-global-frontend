@@ -1,0 +1,38 @@
+
+<ion-content padding class="theme_dark_transparent">
+  <div class="wrapper">
+      <div class="log_div">
+        <ion-card>
+          <ion-card-content>
+            <h4>Rate now</h4>
+            <hr>
+            <br>
+            <div class="textCenter">
+              <div class="ratting_circle">
+                <img src="assets/imgs/item1.png">
+              </div>
+            </div>
+            <h5>McDonald’s <br>(Atlanta, Gaponce De Leon Ave)</h5>
+            <p>Give your rating</p>
+            <rating 
+        readOnly="false" 
+        max="5" 
+        emptyStarIconName="star-outline" 
+        halfStarIconName="star-half" 
+        starIconName="star" 
+        nullable="false" ></rating>
+            <p>Give your Feedback</p>
+            <textarea rows="3">
+
+            </textarea>
+          </ion-card-content>
+          <div padding class="textCenter">
+              <button ion-button full class=" receipt_close" (click)="dismiss()">Submit</button>
+          </div>
+        </ion-card>
+        
+        </div>
+     
+        </div>
+    
+</ion-content>

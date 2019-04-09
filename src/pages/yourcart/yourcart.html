@@ -1,0 +1,94 @@
+<ion-header class="nav_header">
+  <button class="nav_btn floatLeft" (click)="back()">
+      <ion-icon name="ios-arrow-round-back-outline"></ion-icon>
+  </button>
+  <div class="nav_header_title floatLeft">
+Your Cart
+  </div>
+</ion-header>
+<ion-content padding>
+  <div class="cart_wrapper">
+    <h6>Your Order</h6>
+    <div class="meal_list">
+      <ul>
+        <li>
+          <div class="meal_number">
+            2x
+          </div>
+          <div class="meal_details">
+            <h4>Egg McMuffin™ Meal</h4>
+            <p>Medium</p>
+            <p>French Fries</p>
+            <p>Ranch</p>
+            <p>McCafe chocolate shake</p>
+          </div>
+          <div class="meal_amount">
+            <h5>750 TMX</h5>
+            </div>
+            <div class="clear"></div>
+        </li>
+        <li>
+            <div class="meal_number">
+              1x
+            </div>
+            <div class="meal_details">
+              <h4>Egg McMuffin™ Meal</h4>
+              <p>Medium</p>
+            </div>
+            <div class="meal_amount">
+              <h5>225 TMX</h5>
+              </div>
+              <div class="clear"></div>
+          </li>
+      </ul>
+    </div>
+    <h4>Special Instructions</h4>
+    <textarea class="item_textarea" rows="1" placeholder="Add a note ( extra cheeze, no chilly etc. )">
+
+    </textarea>
+    <ion-grid class="p0">
+      <ion-row>
+        <ion-col col-6 class="textLeft">
+          Sub Total
+        </ion-col>
+        <ion-col col-6 class="textRight">
+            200 TMX
+          </ion-col>
+      </ion-row>
+      <ion-row>
+          <ion-col col-6 class="textLeft">
+            Tax
+          </ion-col>
+          <ion-col col-6 class="textRight">
+              150 TMX
+            </ion-col>
+        </ion-row>
+        <ion-row>
+            <ion-col col-6 class="textLeft">
+              Rider Fee
+            </ion-col>
+            <ion-col col-6 class="textRight">
+                125 TMX
+              </ion-col>
+          </ion-row>
+          <ion-row>
+              <ion-col col-6 class="textLeft">
+                <strong>Total</strong>
+              </ion-col>
+              <ion-col col-6 class="textRight">
+                  <strong>1325 TMX</strong>
+                </ion-col>
+            </ion-row>
+    </ion-grid>
+    <br>
+    <br>
+    <div class="textCenter">
+      <button ion-button class="apply_code" (click)="promo()">Apply Promocode</button>
+    </div>
+    <br>
+    <br>
+    <div padding>
+        <button ion-button full class="theme_background add_cart" (click)="checkout()">Continue</button>
+    </div>
+  </div>
+</ion-content>

@@ -1,0 +1,18 @@
+<ion-header class="nav_header theme_background">
+    <button ion-button class="nav_btn floatLeft" (click)="filter()">
+        <ion-icon name="ios-funnel-outline"></ion-icon>
+    </button>
+    <div class="nav_header_title floatLeft">Deliver to Nairobi  <ion-icon name="ios-arrow-down"></ion-icon></div>
+    <button ion-button class="nav_btn floatRight" (click)="presentPopover($event)">
+        <ion-icon name="md-more"></ion-icon>
+    </button>
+    <div class="clear"></div>
+  </ion-header>
+  <ion-tabs color="headColor" tabsplacement="top">
+    <ion-tab [root]="tab1" tabTitle="" tabIcon="md-home"></ion-tab>
+    <ion-tab [root]="tab2" tabTitle="" tabIcon="ios-search"></ion-tab>
+    <ion-tab [root]="tab3" tabTitle="" tabIcon="ios-paper-outline"></ion-tab>
+    <ion-tab [root]="tab4" tabTitle="" tabIcon="ios-heart-outline"></ion-tab>
+    <ion-tab [root]="tab5" tabTitle="" tabIcon="md-person"></ion-tab>
+    <ion-tab [root]="tab6" tabTitle="" tabIcon="md-card"></ion-tab>
+  </ion-tabs>

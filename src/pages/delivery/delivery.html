@@ -1,0 +1,29 @@
+<ion-header class="nav_header">
+    <button class="nav_btn floatLeft" (click)="back()">
+        <ion-icon name="ios-arrow-round-back-outline"></ion-icon>
+    </button>
+    <div class="nav_header_title floatLeft">
+  Your Cart
+    </div>
+  </ion-header>
+<ion-content padding>
+  <div class="cart_wrapper">
+    <h6>Delivery Address</h6>
+    <div class="cart_map">
+        <div #map id="map"></div> 
+    </div>
+    <br>
+    <p>44 Shirley Ave.</p>
+    <p>West Chicago, IL 60185</p>
+    <h6>Note</h6>
+    <p>Deliver to door, If nobody at home pls feel free 
+        to call us</p>
+        <br>
+        <button class="edit_details" (click)="details()"><ion-icon name="md-create"></ion-icon>Edit Details</button>
+        <br>
+        <br>
+        <br>
+        <br>
+        <button ion-button class="add_cart theme_background widthFull" >Begin Checkout</button>
+  </div>
+</ion-content>

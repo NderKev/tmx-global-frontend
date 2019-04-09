@@ -1,0 +1,101 @@
+
+<ion-content>
+    <div class="search_wrapper">
+        <div class="p10">
+            <div class="search_bar">
+                <ion-input placeholder="Search for a Restaurants or Dishes"></ion-input>
+                <button class="search_btn">
+                        <ion-icon name="ios-search"></ion-icon>
+                </button>
+            </div>
+        </div>
+        <div class="search_content">
+                <h5>Near by you</h5>
+                <div class="scroll_section">
+                    <ion-scroll scrollX="true" style="height:150px;">
+                            <ion-row nowrap>
+                                <ion-list>
+                                    <ion-item (click)="item()">
+                                            <ion-card>
+                                                    <ion-card-content>
+                                                        <div class="item_image">
+                                                                <ion-icon name="md-heart-outline"></ion-icon>
+                                                                <img src="assets/imgs/item4.png">
+                                                        </div>
+                                                        <div class="item_detail">
+                                                            <p>Egg McMuffin Me</p>
+                                                        </div>
+                                                    </ion-card-content>
+                                             </ion-card>
+                                    </ion-item>
+                                    <ion-item (click)="item()">
+                                            <ion-card>
+                                                    <ion-card-content>
+                                                        <div class="item_image">
+                                                                <ion-icon name="md-heart-outline"></ion-icon>
+                                                                <img src="assets/imgs/item5.png">
+                                                        </div>
+                                                        <div class="item_detail">
+                                                            <p>Bacon, Egg & Chee...</p>
+                                                        </div>
+                                                    </ion-card-content>
+                                             </ion-card>
+                                    </ion-item>
+                                    <ion-item (click)="item()">
+                                            <ion-card>
+                                                    <ion-card-content>
+                                                        <div class="item_image">
+                                                                <ion-icon name="md-heart-outline"></ion-icon>
+                                                                <img src="assets/imgs/item6.png">
+                                                        </div>
+                                                        <div class="item_detail">
+                                                            <p>Chicken Letuces Salad</p>
+                                                        </div>
+                                                    </ion-card-content>
+                                             </ion-card>
+                                    </ion-item>
+                                </ion-list>	
+                            </ion-row>
+                     </ion-scroll>  
+                </div>
+                <br>
+                <h5>Top Categories</h5>
+                <div class="top_catagories">
+                    <ul>
+                        <li (click)="item()">
+                            <div class="label_green">Bugers</div>
+                            <img src="assets/imgs/item1.png">
+                        </li>
+                        <li (click)="item()">
+                             <div class="label_green">Sandwitches</div>
+                             <img src="assets/imgs/item2.png">
+                        </li>
+                        <li (click)="item()">
+                            <div class="label_green">Combos</div>
+                            <img src="assets/imgs/item3.png">
+                        </li>
+                        <li (click)="item()">
+                            <div class="label_green">Single meal</div>
+                            <img src="assets/imgs/item4.png">
+                        </li>
+                        <li (click)="item()">
+                            <div class="label_green">Italian</div>
+                            <img src="assets/imgs/item5.png">
+                        </li >
+                        <li (click)="item()"> 
+                            <div class="label_green">Salads</div>
+                            <img src="assets/imgs/item6.png">
+                        </li>
+                        <li (click)="item()">
+                            <div class="label_green">Chinese</div>
+                            <img src="assets/imgs/item7.png">
+                        </li>
+                        <li (click)="item()">
+                            <div class="label_green">Fries</div>
+                            <img src="assets/imgs/item8.png">
+                        </li>
+                    </ul>
+                </div>
+        </div>
+    </div>
+</ion-content>

@@ -1,0 +1,70 @@
+<ion-header class="nav_header theme_background">
+    <button ion-button class="nav_btn floatLeft" (click)="dismiss()">
+        <ion-icon name="ios-arrow-back"></ion-icon>
+    </button>
+    <div class="nav_header_title floatLeft textLeft">Account </div>
+    <button ion-button class="nav_btn nav_btn_1 floatRight" (click)="edit()">
+        <p>edit</p>
+    </button>
+    <div class="clear"></div>
+  </ion-header>
+<ion-content>
+  <div class="profile_banner textCenter">
+    <div class="profile_banner_circle">
+    </div>
+  </div>
+  <h4>Account Information</h4>
+  <div class="content_wrapper">
+      <ion-list>
+          <ion-item>
+              <ion-label color="primary" stacked>FIRST NAME</ion-label>
+              <ion-input type="email" placeholder="First name"></ion-input>
+          </ion-item>
+          <ion-item>
+              <ion-label color="primary" stacked>LAST NAME</ion-label>
+              <ion-input type="email" placeholder="Last name"></ion-input>
+          </ion-item>
+          <ion-item>
+              <ion-label color="primary" stacked>EMAIL</ion-label>
+              <ion-input type="email" placeholder="Email"></ion-input>
+          </ion-item>
+              <ion-label color="primary" stacked>PHONE NUMBER</ion-label>
+              <div class="mobile_number">
+                <div class="code">
+                    <select>
+                      <option>+254</option>
+                    </select>
+                </div>
+                <div class="number">
+                    <input type="email" placeholder="Phone number">
+                </div>
+                <div class="clear"></div>
+              </div>
+      </ion-list>
+    </div>
+    <h4>Saved Places</h4>
+    <ion-grid class="" padding>
+      <ion-row>
+        <ion-col col-5 class="p0 border_r">
+          <span class="floatLeft"><img src="assets/imgs/home.png"></span>
+          <span class="floatLeft">
+            <h5>Home</h5>
+            <h6>Add home </h6>
+          </span>
+          <div class="clear"></div>
+        </ion-col>
+        <ion-col col-5 class="p0">
+            <span class="floatLeft"><img src="assets/imgs/work.png"></span>
+            <span class="floatLeft">
+                <h5>Work</h5>
+                <h6>Add work </h6>
+            </span>
+            <div class="clear"></div>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+    <div padding>
+      <button class="sign_out">Sign out</button>
+    </div>
+    <br>
+</ion-content>

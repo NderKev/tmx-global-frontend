@@ -1,0 +1,138 @@
+
+<ion-content >
+  <div class="item_detail_wrapper">
+    <div class="item_detail_banner">
+        <div class="top_bar">
+            <button ion-button class="nav_btn floatLeft" (click)="close()">
+                <ion-icon name="ios-arrow-back"></ion-icon>
+            </button>
+            <button ion-button class="nav_btn floatRight">
+                <ion-icon name="ios-heart-outline"></ion-icon>
+            </button>
+            <button ion-button class="nav_btn floatRight">
+                <ion-icon name="md-share"></ion-icon>
+            </button>
+            <div class="clear"></div>
+        </div>
+        <img src="assets/imgs/item12.png">
+        <div class="banner_stamp">
+          <ion-grid class="p0">
+            <ion-row>
+              <ion-col col-12 class="p0">
+                <h4>
+                    McDonald’d (Atlanta, Gaponce De Leon Ave)
+                </h4>
+              </ion-col>
+            </ion-row>
+            <ion-row>
+                <ion-col col-12 class="p0">
+                  <p>Breakfast and Brunch . Desserts</p>
+                </ion-col>
+            </ion-row>
+            <ion-row>
+                <ion-col col-6 class="p0">
+                    <h6><ion-icon name="ios-time"></ion-icon>15 - 25 mins</h6>
+                </ion-col>
+                <ion-col col-6 class="p0 textRight">
+                  <h5>Fee<strong>500 TMX</strong></h5>
+                </ion-col>
+            </ion-row>
+          </ion-grid>
+        </div>
+    </div>
+    <div class="item_detail">
+      <ion-grid class="p0">
+        <ion-row>
+          <ion-col col-6 class="p0 ">
+            <p>Select menu</p>
+          </ion-col>
+          <ion-col col-6 class="p0 textRight">
+            <select>
+              <option>
+                Breakfast
+              </option>
+              <option>
+                  Lunch
+                </option>
+                <option>
+                    Dinner
+                  </option>
+            </select>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+      <h4>Most Popular</h4>
+      <ul>
+        <li (click)="item()">
+          <div class="list_circle">
+
+          </div>
+          <div class="list_circle_detail">
+            <h5>Egg McMuffin Meal</h5>
+            <p>Comes with small coffee and hash bro...</p>
+            <strong>200 TMX</strong>
+            </div>
+            <div class="clear"></div>
+        </li>
+        <li (click)="item()">
+            <div class="list_circle">
+
+            </div>
+            <div class="list_circle_detail">
+              <h5>Egg McMuffin Meal</h5>
+              <p>Comes with small coffee and hash bro...</p>
+              <strong>200 TMX</strong>
+              </div>
+              <div class="clear"></div>
+          </li>
+          <li (click)="item()">
+              <div class="list_circle">
+
+              </div>
+              <div class="list_circle_detail">
+                <h5>Egg McMuffin Meal</h5>
+                <p>Comes with small coffee and hash bro...</p>
+                <strong>200 TMX</strong>
+                </div>
+                <div class="clear"></div>
+            </li>
+      </ul>
+      <h4>Lunch Meals</h4>
+      <ul>
+          <li (click)="item()">
+            <div class="list_circle">
+
+            </div>
+            <div class="list_circle_detail">
+              <h5>Egg McMuffin Meal</h5>
+              <p>Comes with small coffee and hash bro...</p>
+              <strong>300 TMX</strong>
+              </div>
+              <div class="clear"></div>
+          </li>
+          <li (click)="item()">
+              <div class="list_circle">
+
+              </div>
+              <div class="list_circle_detail">
+                <h5>Egg McMuffin Meal</h5>
+                <p>Comes with small coffee and hash bro...</p>
+                <strong>250 TMX</strong>
+                </div>
+                <div class="clear"></div>
+            </li>
+            <li (click)="item()">
+                <div class="list_circle">
+
+                </div>
+                <div class="list_circle_detail">
+                  <h5>Egg McMuffin Meal</h5>
+                  <p>Comes with small coffee and hash bro...</p>
+                  <strong>300 TMX</strong>
+                  </div>
+                  <div class="clear"></div>
+              </li>
+        </ul>
+    </div>
+  </div>
+</ion-content>

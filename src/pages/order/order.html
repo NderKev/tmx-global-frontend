@@ -1,0 +1,171 @@
+<ion-header>
+    <ul>
+        <li (click)="order_tab(1)" [class.active]="order_type== 1">
+            History
+        </li>
+        <li (click)="order_tab(2)" [class.active]="order_type== 2">
+            Upcoming
+        </li>
+        <div class="clear"></div>
+    </ul>
+</ion-header>
+<ion-content padding>
+    <div class="order_wrapper">
+        <div [hidden]="order_type != 1">
+            <ion-list>
+                <ion-item (click)="orderdetail()">
+                    <div class="list_image">
+                        <div class="not">
+                                <img src="assets/imgs/tick.png">
+                        </div>
+                        <img src="assets/imgs/item10.png">
+                    </div>
+                    <div class="list_details">
+                        <ion-grid class="p0">
+                            <ion-row>
+                                <ion-col col-12 class="p0">
+                                    <h4>
+                                            McDonald’d (Atlanta, Gaponce De Leon Ave)
+                                    </h4>
+                                </ion-col>
+                            </ion-row>
+                            <ion-row>
+                                    <ion-col col-8 class="p0">
+                                        <p>27th March 2019. 11:00 am</p>
+                                    </ion-col>
+                                    <ion-col col-4 class="p0 textRight">
+                                            <p>Order Delivered</p>
+                                    </ion-col>
+                            </ion-row>
+                            <ion-row>
+                                    <ion-col col-8 class="p0">
+                                        <h6>Total<strong> 400 TMX</strong></h6>
+                                    </ion-col>
+                                    <ion-col col-4 class="p0 textRight">
+                                        <button class="theme_background">
+                                            Reorder
+                                        </button>
+                                    </ion-col>
+                            </ion-row>
+                        </ion-grid>
+                    </div>
+                </ion-item>
+                <ion-item (click)="orderdetail()">
+                        <div class="list_image">
+                            <div class="not">
+                                    <img src="assets/imgs/cross.png">
+                            </div>
+                            <img src="assets/imgs/item11.png">
+                        </div>
+                        <div class="list_details">
+                            <ion-grid class="p0">
+                                <ion-row>
+                                    <ion-col col-12 class="p0">
+                                        <h4>
+                                                McDonald’d (Atlanta, Gaponce De Leon Ave)
+                                        </h4>
+                                    </ion-col>
+                                </ion-row>
+                                <ion-row>
+                                        <ion-col col-8 class="p0">
+                                            <p>28th March 2019. 12:00 am</p>
+                                        </ion-col>
+                                        <ion-col col-4 class="p0 textRight">
+                                                <p>Order Delivered</p>
+                                        </ion-col>
+                                </ion-row>
+                                <ion-row>
+                                        <ion-col col-8 class="p0">
+                                            <h6>Total<strong>500 TMX</strong></h6>
+                                        </ion-col>
+                                        <ion-col col-4 class="p0 textRight">
+                                            <button class="theme_background">
+                                                Reorder
+                                            </button>
+                                        </ion-col>
+                                </ion-row>
+                            </ion-grid>
+                        </div>
+                    </ion-item>
+            </ion-list>
+        </div>
+        <div [hidden]="order_type != 2">
+                <ion-list>
+                        <ion-item (click)="orderdetail()">
+                            <div class="list_image">
+                                <div class="not">
+                                        <img src="assets/imgs/tick.png">
+                                </div>
+                                <img src="assets/imgs/item10.png">
+                            </div>
+                            <div class="list_details">
+                                <ion-grid class="p0">
+                                    <ion-row>
+                                        <ion-col col-12 class="p0">
+                                            <h4>
+                                                    McDonald’d (Atlanta, Gaponce De Leon Ave)
+                                            </h4>
+                                        </ion-col>
+                                    </ion-row>
+                                    <ion-row>
+                                            <ion-col col-8 class="p0">
+                                                <p>29th March 2019. 09:00 am</p>
+                                            </ion-col>
+                                            <ion-col col-4 class="p0 textRight">
+                                                    <p>Order Pending</p>
+                                            </ion-col>
+                                    </ion-row>
+                                    <ion-row>
+                                            <ion-col col-8 class="p0">
+                                                <h6>Total<strong>400 TMX</strong></h6>
+                                            </ion-col>
+                                            <ion-col col-4 class="p0 textRight">
+                                                <button class="theme_background">
+                                                    Track order
+                                                </button>
+                                            </ion-col>
+                                    </ion-row>
+                                </ion-grid>
+                            </div>
+                        </ion-item>
+                        <ion-item (click)="orderdetail()">
+                                <div class="list_image">
+                                    <div class="not">
+                                            <img src="assets/imgs/cross.png">
+                                    </div>
+                                    <img src="assets/imgs/item11.png">
+                                </div>
+                                <div class="list_details">
+                                    <ion-grid class="p0">
+                                        <ion-row>
+                                            <ion-col col-12 class="p0">
+                                                <h4>
+                                                        McDonald’d (Atlanta, Gaponce De Leon Ave)
+                                                </h4>
+                                            </ion-col>
+                                        </ion-row>
+                                        <ion-row>
+                                                <ion-col col-8 class="p0">
+                                                    <p>29th March 2019. 09:30 am</p>
+                                                </ion-col>
+                                                <ion-col col-4 class="p0 textRight">
+                                                        <p>Order Pending</p>
+                                                </ion-col>
+                                        </ion-row>
+                                        <ion-row>
+                                                <ion-col col-8 class="p0">
+                                                    <h6>Total<strong>375 TMX</strong></h6>
+                                                </ion-col>
+                                                <ion-col col-4 class="p0 textRight">
+                                                    <button class="theme_background">
+                                                            Track order
+                                                    </button>
+                                                </ion-col>
+                                        </ion-row>
+                                    </ion-grid>
+                                </div>
+                            </ion-item>
+                    </ion-list>
+        </div>
+    </div>
+</ion-content>

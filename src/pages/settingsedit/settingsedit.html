@@ -1,0 +1,60 @@
+<ion-header class="nav_header theme_background">
+    <button ion-button class="nav_btn floatLeft" (click)="dismiss()">
+        <ion-icon name="ios-arrow-back"></ion-icon>
+    </button>
+    <div class="nav_header_title floatLeft textLeft">Edit Account </div>
+    <button ion-button class="nav_btn nav_btn_1 floatRight">
+        <p>edit</p>
+    </button>
+    <div class="clear"></div>
+  </ion-header>
+<ion-content>
+  <div class="profile_banner textCenter">
+    <div class="profile_banner_circle">
+    </div>
+  </div>
+  <div class="content_wrapper">
+      <ion-list>
+          <ion-item>
+              <ion-label color="primary" stacked>FIRST NAME</ion-label>
+              <ion-input type="email" placeholder="First name"></ion-input>
+          </ion-item>
+          <ion-item>
+              <ion-label color="primary" stacked>LAST NAME</ion-label>
+              <ion-input type="email" placeholder="Last name"></ion-input>
+          </ion-item>
+          <ion-item>
+              <ion-label color="primary" stacked>EMAIL</ion-label>
+              <ion-input type="email" placeholder="Email"></ion-input>
+          </ion-item>
+              <ion-label color="primary" stacked>PHONE NUMBER</ion-label>
+              <div class="mobile_number"> 
+                <div class="code">
+                    <select>
+                      <option>+91</option>
+                    </select>
+                </div>
+                <div class="number">
+                    <input type="email" placeholder="Phone number">
+                </div>
+                <div class="clear"></div>
+              </div>
+              <ion-item>
+                  <ion-label color="primary" stacked>CURRENT PASSWORD</ion-label>
+                  <ion-input type="password" placeholder="Current Password"></ion-input>
+              </ion-item>
+              <ion-item>
+                  <ion-label color="primary" stacked>NEW PASSWORD</ion-label>
+                  <ion-input type="password" placeholder="New Password"></ion-input>
+              </ion-item>
+              <ion-item>
+                  <ion-label color="primary" stacked>CONFIRM NEW PASSWORD</ion-label>
+                  <ion-input type="password" placeholder="Confirm new Password"></ion-input>
+              </ion-item>
+      </ion-list> 
+      <br>
+      <button ion-button full class="theme_background">Save
+      </button> 
+      <br>
+    </div>
+</ion-content>

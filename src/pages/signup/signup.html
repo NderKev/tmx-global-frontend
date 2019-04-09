@@ -1,0 +1,56 @@
+
+<ion-content>
+  <div class="signup_wrapper">
+    <div class="top_wrapper textCenter">
+      <div class="nav_header">
+        <button class="nav_btn floatLeft" (click)="back()">
+            <ion-icon name="ios-arrow-back"></ion-icon>
+        </button>
+        <div class="clear"></div>
+      </div>
+      <img src="assets/imgs/tmx_logo.png">
+      <h3>Create Account</h3>
+      <hr>
+    </div>
+    <div class="content_wrapper">
+      <ion-list>
+          <ion-item>
+              <ion-label color="primary" stacked>FIRST NAME</ion-label>
+              <ion-input type="email" placeholder="First name"></ion-input>
+          </ion-item>
+          <ion-item>
+              <ion-label color="primary" stacked>LAST NAME</ion-label>
+              <ion-input type="email" placeholder="Last name"></ion-input>
+          </ion-item>
+          <ion-item>
+              <ion-label color="primary" stacked>EMAIL</ion-label>
+              <ion-input type="email" placeholder="Email"></ion-input>
+          </ion-item>
+          <ion-item>
+              <ion-label color="primary" stacked>PASSWORD</ion-label>
+              <ion-input type="password" placeholder="Password"></ion-input>
+          </ion-item>
+          <ion-item>
+              <ion-label color="primary" stacked>CONFIRM PASSWORD</ion-label>
+              <ion-input type="password" placeholder="Confirm Password"></ion-input>
+          </ion-item>
+              <ion-label color="primary" stacked>PHONE NUMBER</ion-label>
+              <div class="mobile_number">
+                <div class="code">
+                    <select>
+                      <option>+254</option>
+                    </select>
+                </div>
+                <div class="number">
+                    <input type="email" placeholder="Phone number">
+                </div>
+                <div class="clear"></div>
+              </div>
+      </ion-list>
+      <p>By clicking “Register” I confirm that I have read and agreed to the <a>Terms & Conditions</a> and <a>Privacy Policy</a></p>
+      <button ion-button full class="theme_background" icon-right (click)="login()">Register
+          <ion-icon name="ios-arrow-forward" class=""></ion-icon>
+      </button>
+    </div>
+  </div>
+</ion-content>

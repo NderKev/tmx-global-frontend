@@ -1,0 +1,158 @@
+page-item-detail-one {
+    .item_detail_wrapper{
+        width:100%;
+        .item_detail_banner{
+            width:100%;
+            height:250px;
+            position: relative;
+            img{
+                width:100%;
+                height:100%;
+                object-fit: cover;
+                object-position:center;
+
+            }
+            .top_bar{
+                width:100%;
+                position: absolute;
+                top:0px;
+                left:0px;
+                right:0px;
+            }
+            .banner_stamp{
+                position:absolute;
+                top: 190px;
+                left:10px;
+                right:10px; 
+                background: #fff;
+                height:140px;
+                box-shadow: 5px 5px 25px 0px #888888;
+                padding: 15px;
+                h4{
+                    margin:0px;
+                    padding:0px;
+                    color: #656565;
+                    font-weight: 500;
+                    font-size: 18px;
+                }
+                h6{
+                    margin:0px;
+                    padding:0px;
+                    color: #6f6f6f;
+                    font-weight: 400;
+                    .icon{
+                        margin-right:10px;
+                        color: #c2c1c1;
+                    }
+                }
+                p{
+                    margin:0px;
+                    padding:0px;
+                    color: #6f6f6f;
+                    padding-top:10px;
+                    padding-bottom: 20px;
+                    font-size: 15px;
+                }
+                h5{
+                    color: #b6b6b6;
+                    font-weight: 400;
+                    margin:0px;
+                    font-size: 15px;
+                    position: relative;
+                    bottom: 5px;
+                    strong{
+                        color: #759f32;
+                        margin-left:10px;
+                        font-size: 25px;
+                    }
+                }
+            }
+        }
+        .item_detail{
+            width:100%;
+            padding: 15px;
+            h5{
+                color: #656565;
+                margin:0px;
+                font-size: 20px;
+                font-weight: 400;
+            }
+            p{
+                color: #a3a3a3;
+                margin:0px;
+                padding-top: 5px;
+            }
+            h4{
+                margin:0px;
+                padding:0px;
+                color: #616161;
+                font-size: 16px;
+                padding-top: 15px;
+                padding-bottom: 15px;
+            }
+            .item_textarea{
+                width: 100%;
+                border-bottom:1px solid #9a9a9a;
+                border-left:0px;
+                border-right:0px;
+                border-top:0px;
+                color: #c8c8c8;
+            }
+            ul{
+                padding:0px;
+                margin:0px;
+                padding-top:0px;
+                li{
+                    padding-bottom: 15px;
+                    .grid{
+                        .row{
+                            .col{
+                                .radio{
+                                    .radio-checked {
+                                        border-color: #009587 !important;
+                                        .radio-inner{
+                                            background-color: #009587 !important;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    list-style: none;
+                    
+                    .label{
+                        padding:0px;
+                        margin:0px;
+                        color: #828282;
+                        font-size: 15px;
+                    }
+                    p{
+                        margin:0px;
+                        padding:0px;
+                        color: #4c4c4c;
+                        font-size: 15px;
+                    }
+                   
+                }
+            }
+        }
+        .add_cart{
+            height:45px;
+            border-radius: 6px;
+            color: #fff;
+            font-weight: 500;
+            text-transform: capitalize;
+            font-weight: 400;
+            font-size: 20px;
+            position: relative;
+            .price{
+                position: absolute;
+                right:10px;
+                top:12px;
+                color:#fff;
+                font-weight: 400;
+            }
+        }
+    }
+  
+}

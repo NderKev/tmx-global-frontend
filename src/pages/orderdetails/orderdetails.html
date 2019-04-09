@@ -1,0 +1,125 @@
+<ion-header class="nav_header theme_background">
+    <button class="nav_btn floatLeft text_color_white" (click)="dismiss()">
+        <ion-icon name="ios-arrow-round-back-outline"></ion-icon>
+    </button>
+    <div class="nav_header_title floatLeft text_color_white">
+  Order Details
+    </div>
+  </ion-header>
+<ion-content>
+    <div class="order_wrapper">
+        <ion-list>
+            <ion-item>
+                <div class="list_image">
+                    <div class="not">
+                            <img src="assets/imgs/tick.png">
+                    </div>
+                    <img src="assets/imgs/item10.png">
+                </div>
+                <div class="list_details">
+                    <ion-grid class="p0">
+                        <ion-row>
+                            <ion-col col-12 class="p0">
+                                <h4>
+                                        McDonald’d (Atlanta, Gaponce De Leon Ave)
+                                </h4>
+                            </ion-col>
+                        </ion-row>
+                        <ion-row>
+                                <ion-col col-4 class="p0">
+                                    <p>Ordered Time</p>
+                                </ion-col>
+                                <ion-col col-8 class="p0 textLeft">
+                                        <p><strong>29th March 2019. 10:00 am</strong></p>
+                                </ion-col>
+                        </ion-row>
+                        <ion-row>
+                            <ion-col col-4 class="p0">
+                                <p>Order Status</p>
+                            </ion-col>
+                            <ion-col col-8 class="p0 textLeft">
+                                    <p><strong>Delivered Successfully</strong></p>
+                            </ion-col>
+                    </ion-row>
+                   </ion-grid>
+                   <br>
+                   <button class="view_receipt" (click)="receipt()">View Receipt</button>
+                </div>
+            </ion-item>
+          </ion-list>
+          <div class="meals_list">
+              <ul>
+                <li>
+                  <ion-grid class="p0">
+                    <ion-row>
+                      <ion-col col-1 class="">
+                          <div class="number_circle">
+                              1
+                            </div>
+                      </ion-col>
+                      <ion-col col-2 class="">
+                        <div class="circle">
+                            <img src="assets/imgs/item1.png">
+                        </div>
+                      </ion-col>
+                      <ion-col col-6 class="">
+                        <p>Egg McMuffin Meal</p>
+                      </ion-col>
+                      <ion-col col-3 class="textRight">
+                        <h6>800 TMX</h6>
+                      </ion-col>
+                    </ion-row>
+                  </ion-grid>
+                </li>
+                <li>
+                    <ion-grid class="p0">
+                      <ion-row>
+                        <ion-col col-1 class="">
+                            <div class="number_circle">
+                                2
+                              </div>
+                        </ion-col>
+                        <ion-col col-2 class="">
+                          <div class="circle">
+                              <img src="assets/imgs/item2.png">
+                          </div>
+                        </ion-col>
+                        <ion-col col-6 class="">
+                          <p>Egg McMuffin Meal</p>
+                        </ion-col>
+                        <ion-col col-3 class="textRight">
+                          <h6>500 TMX</h6>
+                        </ion-col>
+                      </ion-row>
+                    </ion-grid>
+                  </li>
+                <hr>
+                <li>
+                    <ion-grid class="p0">
+                      <ion-row>
+                        <ion-col col-6 class="">
+                          <h6>Total</h6>
+                        </ion-col>
+                        <ion-col col-6 class="textRight">
+                          <h6><strong>1300 TMX</strong></h6>
+                          </ion-col>
+                      </ion-row>
+                    </ion-grid>
+                </li>
+                <li>
+                    <ion-grid class="p0">
+                      <ion-row>
+                        <ion-col col-6 class="p0">
+                          <button ion-button class="rate" (click)="ratting()">Rate now</button>
+                        </ion-col>
+                        <ion-col col-6 class="p0">
+                            <button ion-button class="reorder">Re Order</button>
+                        </ion-col>
+                      </ion-row>
+                    </ion-grid>
+                </li>
+
+              </ul>
+            </div>
+      </div>
+</ion-content>

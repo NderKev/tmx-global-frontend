@@ -1,0 +1,18 @@
+<ion-header class="nav_header theme_background">
+    <button ion-button class="nav_btn floatLeft" (click)="dismiss()">
+        <ion-icon name="ios-arrow-back"></ion-icon>
+    </button>
+    <div class="nav_header_title floatLeft textLeft">My Location  <ion-icon name="ios-arrow-down"></ion-icon></div>
+    <button ion-button class="nav_btn floatRight">
+        <!-- <ion-icon name="md-more"></ion-icon> -->
+    </button>
+    <div class="clear"></div>
+  </ion-header>
+<ion-content>
+    <div #map id="map"></div>
+    <div class="footer" padding>
+        <button ion-button full class="theme_background" icon-right (click)="dismiss()">Done
+        </button>
+      </div>
+</ion-content>
+
